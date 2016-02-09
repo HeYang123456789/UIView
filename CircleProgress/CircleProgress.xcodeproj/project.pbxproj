@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BFE77221C6924910001A138 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFE77211C6924910001A138 /* main.m */; };
+		3BFE77251C6924910001A138 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFE77241C6924910001A138 /* AppDelegate.m */; };
+		3BFE77281C6924910001A138 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFE77271C6924910001A138 /* ViewController.m */; };
+		3BFE772B1C6924910001A138 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE77291C6924910001A138 /* Main.storyboard */; };
+		3BFE772D1C6924910001A138 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE772C1C6924910001A138 /* Assets.xcassets */; };
+		3BFE77301C6924910001A138 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BFE772E1C6924910001A138 /* LaunchScreen.storyboard */; };
+		3BFE77391C69250B0001A138 /* CircleProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFE77381C69250B0001A138 /* CircleProgressView.m */; };
+		3BFE773C1C6929080001A138 /* UIView+AdjustFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFE773B1C6929080001A138 /* UIView+AdjustFrame.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3BFE771D1C6924900001A138 /* CircleProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BFE77211C6924910001A138 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3BFE77231C6924910001A138 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3BFE77241C6924910001A138 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3BFE77261C6924910001A138 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3BFE77271C6924910001A138 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3BFE772A1C6924910001A138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3BFE772C1C6924910001A138 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3BFE772F1C6924910001A138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3BFE77311C6924910001A138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BFE77371C69250B0001A138 /* CircleProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircleProgressView.h; path = CircleProgress/CircleProgressView.h; sourceTree = "<group>"; };
+		3BFE77381C69250B0001A138 /* CircleProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircleProgressView.m; path = CircleProgress/CircleProgressView.m; sourceTree = "<group>"; };
+		3BFE773A1C6929080001A138 /* UIView+AdjustFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+AdjustFrame.h"; path = "CircleProgress/UIView+AdjustFrame.h"; sourceTree = "<group>"; };
+		3BFE773B1C6929080001A138 /* UIView+AdjustFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+AdjustFrame.m"; path = "CircleProgress/UIView+AdjustFrame.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BFE771A1C6924900001A138 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3BFE77141C6924900001A138 = {
+			isa = PBXGroup;
+			children = (
+				3BFE771F1C6924910001A138 /* CircleProgress */,
+				3BFE771E1C6924900001A138 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3BFE771E1C6924900001A138 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BFE771D1C6924900001A138 /* CircleProgress.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3BFE771F1C6924910001A138 /* CircleProgress */ = {
+			isa = PBXGroup;
+			children = (
+				3BFE77231C6924910001A138 /* AppDelegate.h */,
+				3BFE77241C6924910001A138 /* AppDelegate.m */,
+				3BFE77261C6924910001A138 /* ViewController.h */,
+				3BFE77271C6924910001A138 /* ViewController.m */,
+				3BFE77371C69250B0001A138 /* CircleProgressView.h */,
+				3BFE77381C69250B0001A138 /* CircleProgressView.m */,
+				3BFE773A1C6929080001A138 /* UIView+AdjustFrame.h */,
+				3BFE773B1C6929080001A138 /* UIView+AdjustFrame.m */,
+				3BFE77291C6924910001A138 /* Main.storyboard */,
+				3BFE772C1C6924910001A138 /* Assets.xcassets */,
+				3BFE772E1C6924910001A138 /* LaunchScreen.storyboard */,
+				3BFE77311C6924910001A138 /* Info.plist */,
+				3BFE77201C6924910001A138 /* Supporting Files */,
+			);
+			path = CircleProgress;
+			sourceTree = "<group>";
+		};
+		3BFE77201C6924910001A138 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BFE77211C6924910001A138 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3BFE771C1C6924900001A138 /* CircleProgress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BFE77341C6924910001A138 /* Build configuration list for PBXNativeTarget "CircleProgress" */;
+			buildPhases = (
+				3BFE77191C6924900001A138 /* Sources */,
+				3BFE771A1C6924900001A138 /* Frameworks */,
+				3BFE771B1C6924900001A138 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CircleProgress;
+			productName = CircleProgress;
+			productReference = 3BFE771D1C6924900001A138 /* CircleProgress.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3BFE77151C6924900001A138 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = HEYANG;
+				TargetAttributes = {
+					3BFE771C1C6924900001A138 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = D96KWVMP74;
+					};
+				};
+			};
+			buildConfigurationList = 3BFE77181C6924900001A138 /* Build configuration list for PBXProject "CircleProgress" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3BFE77141C6924900001A138;
+			productRefGroup = 3BFE771E1C6924900001A138 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3BFE771C1C6924900001A138 /* CircleProgress */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BFE771B1C6924900001A138 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BFE77301C6924910001A138 /* LaunchScreen.storyboard in Resources */,
+				3BFE772D1C6924910001A138 /* Assets.xcassets in Resources */,
+				3BFE772B1C6924910001A138 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BFE77191C6924900001A138 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BFE77281C6924910001A138 /* ViewController.m in Sources */,
+				3BFE773C1C6929080001A138 /* UIView+AdjustFrame.m in Sources */,
+				3BFE77391C69250B0001A138 /* CircleProgressView.m in Sources */,
+				3BFE77251C6924910001A138 /* AppDelegate.m in Sources */,
+				3BFE77221C6924910001A138 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3BFE77291C6924910001A138 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BFE772A1C6924910001A138 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3BFE772E1C6924910001A138 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BFE772F1C6924910001A138 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3BFE77321C6924910001A138 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3BFE77331C6924910001A138 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3BFE77351C6924910001A138 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CircleProgress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodboy.CircleProgress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3BFE77361C6924910001A138 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CircleProgress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goodboy.CircleProgress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3BFE77181C6924900001A138 /* Build configuration list for PBXProject "CircleProgress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BFE77321C6924910001A138 /* Debug */,
+				3BFE77331C6924910001A138 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BFE77341C6924910001A138 /* Build configuration list for PBXNativeTarget "CircleProgress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BFE77351C6924910001A138 /* Debug */,
+				3BFE77361C6924910001A138 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3BFE77151C6924900001A138 /* Project object */;
+}

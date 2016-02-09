@@ -39,3 +39,14 @@ YouXianMing老师用的是类别，但是本人将其改写为继承自CALayer�
 这样就能将UIView的属性layer的类型CALayer换成CAEmitterLayer
 ```
 然后在这个自定义UIView类中添加一个CAEmitterLayer属性，并且在创建这个CALayer的时候，就能拿到这个CAEmitterLayer对象，注意哦，不要另外创建，因为layerClass的类型是CAEmitterLayer，这样原本UIView.layer类型就是这个CAEmitterLayer，不过XCode可能误以为的类型还是CALayer，就会警告，所以还需要强制类型装换它哦。
+
+
+## 3、Use CAShapeLayer
+
+![](http://i12.tietuku.com/b10d4ab84261cc12.gif)
+
++ 使用了
+	- 核心动画的路径转换显示动画
+	- 颜色的隐式动画
+	- 精度条的隐式动画
+	- 线宽的隐式动画(gif图没有显示罢了)
