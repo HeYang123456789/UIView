@@ -25,21 +25,21 @@
     if (self) {
         // 创建CAprogressLayer
         CAShapeLayer* progressLayer = [CAShapeLayer layer];
-        progressLayer.frame         = frame;
+        progressLayer.frame         = self.bounds;
         progressLayer.fillColor     = [UIColor clearColor].CGColor;
         progressLayer.lineWidth     = 3.5f;
-        progressLayer.strokeColor   = [UIColor redColor].CGColor;
+        [self.layer addSublayer:progressLayer];
+        self.progressLayer          = progressLayer;
+        self.color                  = [UIColor redColor];
 
         // 贝塞尔曲线所在的frame值
         CGRect pathFrame            = CGRectMake(progressLayer.lineWidth * 0.5 + 0.5, progressLayer.lineWidth * 0.5 + 0.5, frame.size.width -  progressLayer.lineWidth - 1, frame.size.height -  progressLayer.lineWidth - 1);
         // 创建贝塞尔曲线
         UIBezierPath* path          = [UIBezierPath bezierPathWithOvalInRect:pathFrame];
         // 关联贝塞尔曲线
-        self.path                   = path;//内部实现了progressLayer.path = path.CGPath;
+        progressLayer.path = path.CGPath;
         // 超出VIew本身的不要显示
         progressLayer.masksToBounds = YES;
-        [self.layer addSublayer:progressLayer];
-        self.progressLayer          = progressLayer;
     }
     return self;
 }
@@ -49,7 +49,7 @@
 @synthesize startValue = _startValue;
 -(void)setStartValue:(CGFloat)startValue{
     _startValue = startValue;
-    self.progressLayer.strokeStart = _startValue;
+    _progressLayer.strokeStart = _startValue;
 }
 -(CGFloat)startValue{
     return _startValue;
@@ -58,7 +58,7 @@
 @synthesize endValue = _endValue;
 -(void)setEndValue:(CGFloat)endValue{
     _endValue = endValue;
-    self.progressLayer.strokeEnd = _endValue;
+    _progressLayer.strokeEnd = _endValue;
 }
 -(CGFloat)endValue{
     return _endValue;
@@ -67,7 +67,7 @@
 @synthesize color = _color;
 -(void)setColor:(UIColor *)color{
     _color = color;
-    self.progressLayer.strokeColor = _color.CGColor;
+    _progressLayer.strokeColor = _color.CGColor;
 }
 -(UIColor *)color{
     return _color;
@@ -77,13 +77,13 @@
 -(void)setProgressLineWidth:(CGFloat)progresslineWidth{
     _progressLineWidth           = progresslineWidth;
     // 重新设置线宽，还要重新设置UIBezierPath所在的frame值
-    self.progressLayer.lineWidth = _progressLineWidth;
+    _progressLayer.lineWidth = _progressLineWidth;
     // 贝塞尔曲线所在的frame值
-    CGRect pathFrame             = CGRectMake(_progressLineWidth * 0.5 + 0.5, _progressLineWidth * 0.5 + 0.5, self.progressLayer.frame.size.width - _progressLineWidth - 1, self.progressLayer.frame.size.height - _progressLineWidth - 1);
+    CGRect pathFrame             = CGRectMake(_progressLineWidth * 0.5 + 0.5, _progressLineWidth * 0.5 + 0.5, _progressLayer.frame.size.width - _progressLineWidth - 1, _progressLayer.frame.size.height - _progressLineWidth - 1);
     // 创建贝塞尔曲线
     UIBezierPath* path           = [UIBezierPath bezierPathWithOvalInRect:pathFrame];
     // 关联贝塞尔曲线
-    self.progressLayer.path      = path.CGPath;
+    _progressLayer.path      = path.CGPath;
 }
 -(CGFloat)progressLineWidth{
     return _progressLineWidth;
@@ -93,12 +93,13 @@
 @synthesize path = _path;
 -(void)setPath:(UIBezierPath *)path{
     CABasicAnimation* baseicAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
+    baseicAnimation.removedOnCompletion = NO;
     baseicAnimation.duration          = 1.f;
     baseicAnimation.fromValue         = (__bridge id _Nullable)(_path.CGPath);
     baseicAnimation.toValue           = (__bridge id _Nullable)(path.CGPath);
-    [self.progressLayer addAnimation:baseicAnimation forKey:@"animationCirclePath"];
-    self.progressLayer.path           = _path.CGPath;
+    [_progressLayer addAnimation:baseicAnimation forKey:@"animateCirclePath"];
     _path                             = path;
+    _progressLayer.path           = _path.CGPath;
 }
 -(UIBezierPath *)path{
     return _path;

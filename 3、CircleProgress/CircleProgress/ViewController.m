@@ -26,20 +26,21 @@
     
     CircleProgressView* progressView = [[CircleProgressView alloc] initWithFrame:CGRectMake(0, 0, 200, 200)];
     progressView.center = self.view.center;
-//    progressView.layer.borderWidth = 1.f;
+    progressView.layer.borderWidth = 1.f;
+    progressView.layer.borderColor = [UIColor whiteColor].CGColor;
     [self.view addSubview:progressView];
     self.progressView = progressView;
     
     // 测试进度条路径的切换动画
     [self progressPathAnimation];
     // 测试进度条位置的动画
-    [self progressAnimation];
+//    [self progressAnimation];
     // 测试线颜色的动画
-    [self progressColorAnimation];
+//    [self progressColorAnimation];
     // 测试线宽的动画
 //    [self progressLineWidthAnimation];
 }
-#pragma mark - 测试进度条路径的切换动画
+#pragma mark - 进度条路径的切换动画
 -(void)progressPathAnimation{
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.f
                                                   target:self
@@ -61,7 +62,7 @@ static BOOL isOne = TRUE;
     }
     
 }
-#pragma mark - 因线颜色属性变化的线宽变化动画
+#pragma mark - 因起止点属性变化的线宽变化动画
 -(void)progressAnimation{
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.f
                                                   target:self
