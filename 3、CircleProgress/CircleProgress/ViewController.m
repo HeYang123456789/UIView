@@ -28,13 +28,14 @@
     progressView.center = self.view.center;
     progressView.layer.borderWidth = 1.f;
     progressView.layer.borderColor = [UIColor whiteColor].CGColor;
+    progressView.progressLineWidth = 10.f;
     [self.view addSubview:progressView];
     self.progressView = progressView;
     
     // 测试进度条路径的切换动画
-    [self progressPathAnimation];
+//    [self progressPathAnimation];
     // 测试进度条位置的动画
-//    [self progressAnimation];
+    [self progressAnimation];
     // 测试线颜色的动画
 //    [self progressColorAnimation];
     // 测试线宽的动画
@@ -78,7 +79,7 @@ static BOOL isOne = TRUE;
 }
 #pragma mark - 因线颜色属性变化的线宽变化动画
 -(void)progressColorAnimation{
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:1.f
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:5.f
                                                   target:self
                                                 selector:@selector(changeProgressColor)
                                                 userInfo:nil

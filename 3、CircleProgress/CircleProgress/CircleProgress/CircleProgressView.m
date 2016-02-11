@@ -38,6 +38,7 @@
         UIBezierPath* path          = [UIBezierPath bezierPathWithOvalInRect:pathFrame];
         // 关联贝塞尔曲线
         progressLayer.path = path.CGPath;
+//        self.path = path;// 当开始就需要核心动画改变路径的话
         // 超出VIew本身的不要显示
         progressLayer.masksToBounds = YES;
     }
@@ -92,12 +93,14 @@
 #pragma mark 重写path的set和get方法
 @synthesize path = _path;
 -(void)setPath:(UIBezierPath *)path{
-    CABasicAnimation* baseicAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
-    baseicAnimation.removedOnCompletion = NO;
-    baseicAnimation.duration          = 1.f;
-    baseicAnimation.fromValue         = (__bridge id _Nullable)(_path.CGPath);
-    baseicAnimation.toValue           = (__bridge id _Nullable)(path.CGPath);
-    [_progressLayer addAnimation:baseicAnimation forKey:@"animateCirclePath"];
+    if (path) {
+        CABasicAnimation* baseicAnimation = [CABasicAnimation animationWithKeyPath:@"path"];
+        baseicAnimation.removedOnCompletion = NO;
+        baseicAnimation.duration          = 1.f;
+        baseicAnimation.fromValue         = (__bridge id _Nullable)(_path.CGPath);
+        baseicAnimation.toValue           = (__bridge id _Nullable)(path.CGPath);
+        [_progressLayer addAnimation:baseicAnimation forKey:@"animateCirclePath"];
+    }
     _path                             = path;
     _progressLayer.path           = _path.CGPath;
 }
