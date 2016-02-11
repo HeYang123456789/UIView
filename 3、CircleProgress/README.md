@@ -74,4 +74,6 @@
 
 ![](http://i12.tietuku.com/a1e3dc39689f1e28.gif)
 
+只不过通过核心动画更改路径动画，但是
+
 综合示例源码请看：[https://github.com/HeYang123456789/UIView](https://github.com/HeYang123456789/UIView)
