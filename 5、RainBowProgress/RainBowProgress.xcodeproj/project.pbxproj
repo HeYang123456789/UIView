@@ -13,7 +13,7 @@
 		3B1A17001C6B897C0050F2DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A16FE1C6B897C0050F2DC /* Main.storyboard */; };
 		3B1A17021C6B897C0050F2DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A17011C6B897C0050F2DC /* Assets.xcassets */; };
 		3B1A17051C6B897C0050F2DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1A17031C6B897C0050F2DC /* LaunchScreen.storyboard */; };
-		3B1A170E1C6B92D10050F2DC /* RainBowProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1A170D1C6B92D10050F2DC /* RainBowProgress.m */; };
+		3B2416DB1C6CDBD300DA160A /* RainbowProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B2416DA1C6CDBD300DA160A /* RainbowProgress.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		3B1A17011C6B897C0050F2DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B1A17041C6B897C0050F2DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B1A17061C6B897C0050F2DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B1A170C1C6B92D10050F2DC /* RainBowProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RainBowProgress.h; sourceTree = "<group>"; };
-		3B1A170D1C6B92D10050F2DC /* RainBowProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RainBowProgress.m; sourceTree = "<group>"; };
+		3B2416D91C6CDBD300DA160A /* RainbowProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RainbowProgress.h; sourceTree = "<group>"; };
+		3B2416DA1C6CDBD300DA160A /* RainbowProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RainbowProgress.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +65,7 @@
 				3B1A16F91C6B897C0050F2DC /* AppDelegate.m */,
 				3B1A16FB1C6B897C0050F2DC /* ViewController.h */,
 				3B1A16FC1C6B897C0050F2DC /* ViewController.m */,
-				3B1A170C1C6B92D10050F2DC /* RainBowProgress.h */,
-				3B1A170D1C6B92D10050F2DC /* RainBowProgress.m */,
+				3B2416D81C6CDBD300DA160A /* RainbowProgress */,
 				3B1A16FE1C6B897C0050F2DC /* Main.storyboard */,
 				3B1A17011C6B897C0050F2DC /* Assets.xcassets */,
 				3B1A17031C6B897C0050F2DC /* LaunchScreen.storyboard */,
@@ -82,6 +81,15 @@
 				3B1A16F61C6B897C0050F2DC /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B2416D81C6CDBD300DA160A /* RainbowProgress */ = {
+			isa = PBXGroup;
+			children = (
+				3B2416D91C6CDBD300DA160A /* RainbowProgress.h */,
+				3B2416DA1C6CDBD300DA160A /* RainbowProgress.m */,
+			);
+			path = RainbowProgress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +166,7 @@
 				3B1A16FD1C6B897C0050F2DC /* ViewController.m in Sources */,
 				3B1A16FA1C6B897C0050F2DC /* AppDelegate.m in Sources */,
 				3B1A16F71C6B897C0050F2DC /* main.m in Sources */,
-				3B1A170E1C6B92D10050F2DC /* RainBowProgress.m in Sources */,
+				3B2416DB1C6CDBD300DA160A /* RainbowProgress.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +315,7 @@
 				3B1A170B1C6B897C0050F2DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

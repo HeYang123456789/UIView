@@ -1,14 +1,14 @@
 //
-//  RainBowProgress.m
-//  RainBowProgress
+//  RainbowProgress.m
+//  RainbowProgress
 //
 //  Created by HEYANG on 16/2/10.
 //  Copyright © 2016年 HEYANG. All rights reserved.
 //
 
-#import "RainBowProgress.h"
+#import "RainbowProgress.h"
 
-@interface RainBowProgress ()
+@interface RainbowProgress ()
 
 /** Animating */
 @property (nonatomic,assign,getter=isAnimating)BOOL animating;
@@ -23,7 +23,7 @@
  *      2、遮罩层的变化用的是CAShapeLayer的startPoint和endPoint
  */
 
-@implementation RainBowProgress
+@implementation RainbowProgress
 
 #pragma mark - 将UIView默认的CALayer替换成CAGradientLayer
 +(Class)layerClass{
@@ -38,11 +38,11 @@
     if (self) {
         self.frame = originFrame;
         
-        [self setUpRainBowLayer];
+        [self setUpRainbowLayer];
     }
     return self;
 }
--(void)setUpRainBowLayer{
+-(void)setUpRainbowLayer{
     // 1、创建CAGradientLayer彩虹条颜色层，彩虹颜色当然需要数组存储
     CAGradientLayer* gradientLayer = (CAGradientLayer*)self.layer;
     [gradientLayer setStartPoint:CGPointMake(0, 0)];
@@ -147,7 +147,7 @@
 @synthesize progressHeigh = _progressHeigh;
 -(void)setProgressHeigh:(CGFloat)progressHeigh{
     _progressHeigh = progressHeigh;
-    // 就要重新设置RainBowProgress这个自定义UIView的高度
+    // 就要重新设置RainbowProgress这个自定义UIView的高度
     CGRect frame = self.frame;
     frame.origin.y = _progressHeigh;
     self.frame = frame;

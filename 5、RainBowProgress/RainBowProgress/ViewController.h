@@ -1,6 +1,6 @@
 //
 //  ViewController.h
-//  RainBowProgress
+//  RainbowProgress
 //
 //  Created by HEYANG on 16/2/10.
 //  Copyright © 2016年 HEYANG. All rights reserved.
