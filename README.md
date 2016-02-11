@@ -56,3 +56,7 @@ YouXianMing老师用的是类别，但是本人将其改写为继承自CALayer�
 ## 4、Use CAGradientLayer
 
 ![色差动画的实现.gif](http://i11.tietuku.com/bedd584f01c5a8d9.gif) ![图解CAGradientLayer的locations数组属性.png](http://i11.tietuku.com/f5ad960a0970a3ac.png) ![用 CAGradientLayer 封装带色差动画的 View.gif](http://i11.tietuku.com/5c6d77a0190a40b3.gif)
+
+## 5、RainBowProgress
+
+![](https://s3.amazonaws.com/nrjio/GradientProgressView.gif)
