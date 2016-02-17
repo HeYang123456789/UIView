@@ -5,7 +5,9 @@
 //  Created by HEYANG on 16/2/10.
 //  Copyright © 2016年 HEYANG. All rights reserved.
 //
-
+/**
+ * 该工具类源码下载地址：https://github.com/HeYang123456789/UIView
+ */
 #import <UIKit/UIKit.h>
 
 @interface RainbowProgress : UIView
